@@ -13,7 +13,7 @@ public class condoSales2
 
 	public static void main(String[] args) 
 	{
-		String msg;
+		String msg = null;
 		int condo, garage, parkCost = 150000, golfCost = 170000, lakeCost = 210000, garageCost = 5000;
 		
 		condo = Integer.parseInt(JOptionPane.showInputDialog(null, "1 = Park View\n2 = Golf Course View\n3 = Lake View"
@@ -30,8 +30,6 @@ public class condoSales2
 			{
 				msg = "Your cost will be $" + parkCost;
 			}
-			else
-				msg = "Invalid Input";
 		}
 		if(condo == 2)
 			if(garage == 1)
@@ -42,8 +40,6 @@ public class condoSales2
 			{
 				msg = "Your cost will be $" + golfCost;
 			}
-			else
-				msg = "Invalid Input";
 		if(condo == 3)
 		{
 			if(garage == 1)
@@ -54,9 +50,9 @@ public class condoSales2
 			{
 				msg = "Your cost will be $" + lakeCost;
 			}
-			else
-				msg = "Invalid Input";
 		}
+		else
+			msg = "Invalid Input";
 		JOptionPane.showMessageDialog(null, msg);
 	}
 
