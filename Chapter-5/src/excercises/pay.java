@@ -14,7 +14,7 @@ public class pay
 	public static void main(String[] args) 
 	{
 		int skill, hours, insurance, retire, extraPay, pay1 = 17, pay2 = 20, pay3 = 22;
-		double pay, total;
+		double pay;
 		
 		skill = Integer.parseInt(JOptionPane.showInputDialog(null, "What is your skill level?\n1, 2, or 3"));
 		hours = Integer.parseInt(JOptionPane.showInputDialog(null, "How many hours did you work this week?"));
